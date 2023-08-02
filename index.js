@@ -11,28 +11,39 @@ const questions = [
     },
     {
         type: "input",
-        name: "title",
-        message: "Gimmi a title:"
+        name: "description",
+        message: "Now description:"
     },{
         type: "input",
-        name: "title",
-        message: "Gimmi a title:"
+        name: "imageAlt",
+        message: "imageAlt"
     },{
         type: "input",
-        name: "title",
-        message: "Gimmi a title:"
+        name: "imageUrl",
+        message: "The Url:"
+    },
+    {
+        type: "list",
+        name: "license",
+        message: "Which license?",
+        choices: [
+            {name: "None"},
+            {name: "Apache"},
+            {name: "MIT"},
+            {name: "GNU"},
+        ]
     },
 ];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-
+    
 }
 
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions).then((response) => {
-        
+        console.log(response);
     });
 }
 
