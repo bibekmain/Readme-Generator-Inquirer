@@ -20,7 +20,7 @@ const questions = [
     },{
         type: "input",
         name: "imageUrl",
-        message: "The Url:"
+        message: "The Url/path:"
     },
     {
         type: "list",
@@ -37,13 +37,20 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    
+    fs.writeFile(fileName, generateMarkdown(data), (err) => {
+        if(err){
+            console.log(err);
+        }else{
+            console.log("--README generated--");
+        }
+    });
 }
 
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions).then((response) => {
         console.log(response);
+        writeToFile("generatedREADME.md", response);
     });
 }
 
