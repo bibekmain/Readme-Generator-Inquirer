@@ -1,24 +1,21 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if(license === 'None'){
-    return ``;
+    return '';
   }else{
     return `![Badge](https://img.shields.io/badge/License-${license}-brightgreen)`
   }
 }
 
-// TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if(license === 'None'){
-    return ``;
+    return '';
   }else{
     return `* [License](#license)`;
   }
 }
 
-// TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if(license === 'None'){
@@ -29,24 +26,82 @@ function renderLicenseSection(license) {
   }
 }
 
-// TODO: Create a function to generate markdown for README
+//renders the comma seperated collaborators as a list
+function renderCollabs(collabs){
+  if(collabs){
+    let title = `### Collaborators:
+`;
+    let collaborators = ``;
+    collabs.split(',').forEach(name => {
+      collaborators += `- ${name}
+`;
+    });
+    return title + collaborators;
+  }else{
+    return '';
+  }
+  
+}
+
+//renders the comma seperated third party asset names and links
+function renderThirdPartyAssets(assetNames, assetLinks){
+  let finalizedSection = `### Third Party Assets:
+`;
+
+  if(!assetNames){
+    return '';
+  }else {
+    let assetList = assetNames.split(',');
+    let linksList = assetLinks.split(',');
+
+    for(var i=0; i<assetList.length; i++){
+      finalizedSection += `* [${assetList[i]}](${linksList[i]})
+`;
+    }
+  }
+
+  return finalizedSection
+}
+//TODO: Installation instructions
+
+//TODO: Test Instructions
+
+//TODO: Contact Author page with github link and email address
+
+
 function generateMarkdown(data) {
   return(
 `
 # ${renderLicenseBadge(data.license)}
 # ${data.title}
 
-## Table Of Contents
-* [Description](#description)
-${renderLicenseLink(data.license)}
+![${data.imageAlt}](${data.imageUrl})
     
 ## Description
 ${data.description}
 
-![${data.imageAlt}](${data.imageUrl})
+- Motivation: ${data.motivation}
+- Purpose: ${data.purpose}
+- What i learned: ${data.learned}
+
+## Table Of Contents
+* [Description](#description)
+* [Usage](#usage)
+* [Credits](#credits)
+${renderLicenseLink(data.license)}
+
+## Usage
+${data.usageDescription}  
+
+### Usage Tutorial:  
+![${data.usageGifAlt}](${data.usageGif})
+
+## Credits  
+${renderCollabs(data.collabs)}
+
+${renderThirdPartyAssets(data.thirdPartyAssets, data.thirdPartyAssetsLinks)}
 
 ${renderLicenseSection(data.license)}
-
 `
   );
 }
