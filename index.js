@@ -69,6 +69,16 @@ const initQuestions = [
         message: "Enter the respective links to each third party asset used seperated by commas:"
     },
     {
+        type: "input",
+        name: "githubUser",
+        message: "Enter your GitHub Username:"
+    },
+    {
+        type: "input",
+        name: "email",
+        message: "Enter your Email Address:"
+    },
+    {
         type: "list",
         name: "license",
         message: "What license would you like to use",

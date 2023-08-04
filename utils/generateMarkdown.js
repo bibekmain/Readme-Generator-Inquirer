@@ -63,8 +63,14 @@ function renderThirdPartyAssets(assetNames, assetLinks){
   return finalizedSection
 }
 //TODO: Installation instructions
+function renderInstallation(installationInstructions){
+
+}
 
 //TODO: Test Instructions
+function renderTestInstructions(testInstructions){
+
+}
 
 //TODO: Contact Author page with github link and email address
 
@@ -90,6 +96,9 @@ ${data.description}
 * [Credits](#credits)
 ${renderLicenseLink(data.license)}
 
+## Installation Instructions
+${renderInstallation(data.installation)}
+
 ## Usage
 ${data.usageDescription}  
 
@@ -100,6 +109,13 @@ ${data.usageDescription}
 ${renderCollabs(data.collabs)}
 
 ${renderThirdPartyAssets(data.thirdPartyAssets, data.thirdPartyAssetsLinks)}
+
+## Test Instructions
+${renderTestInstructions(data.testInstructions)}
+
+## Contact The Author
+Check out my [Github](https://github.com/${data.githubUser})  
+You can email me at: [${data.email}](${data.email})
 
 ${renderLicenseSection(data.license)}
 `
