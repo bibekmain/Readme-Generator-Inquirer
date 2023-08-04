@@ -7,20 +7,20 @@ const questions = [
     {
         type: "input",
         name: "title",
-        message: "Gimmi a title:"
+        message: "What is the title of your project:"
     },
     {
         type: "input",
         name: "description",
-        message: "Now description:"
+        message: "What is the Description for your project:"
     },{
         type: "input",
         name: "imageAlt",
-        message: "imageAlt"
+        message: "Thumbnail image alt:"
     },{
         type: "input",
         name: "imageUrl",
-        message: "The Url/path:"
+        message: "The Url/path to the thumbnail image:"
     },
     {
         type: "list",
@@ -30,7 +30,7 @@ const questions = [
             {name: "None"},
             {name: "Apache"},
             {name: "MIT"},
-            {name: "GNU"},
+            {name: "GPL"},
         ]
     },
 ];
@@ -41,7 +41,7 @@ function writeToFile(fileName, data) {
         if(err){
             console.log(err);
         }else{
-            console.log("--README generated--");
+            console.log("--README Generated--");
         }
     });
 }
