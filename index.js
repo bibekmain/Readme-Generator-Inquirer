@@ -1,4 +1,3 @@
-
 const inquirer = require("inquirer");
 const fs = require("fs");
 const generateMarkdown = require("./utils/generateMarkdown.js");
@@ -40,6 +39,11 @@ const initQuestions = [
     },
     {
         type: "input",
+        name: "installation",
+        message: "Enter the steps to install/use the project seperated by commas:"
+    },
+    {
+        type: "input",
         name: "usageDescription",
         message: "A general description on how to use the app:"
     },
@@ -52,6 +56,26 @@ const initQuestions = [
         type: "input",
         name: "usageGifAlt",
         message: "Now an alt message for the GIF:"
+    },
+    {
+        type: "input",
+        name: "testDescription",
+        message: "Enter a description for your test showcase: "
+    },
+    {
+        type: "input",
+        name: "testImageUrl",
+        message: "Enter the Url/path of the image regarding testing:"
+    },
+    {
+        type: "input",
+        name: "testImageAlt",
+        message: "Enter your test image alt:"
+    },
+    {
+        type: "input",
+        name: "testInstructions",
+        message: "Enter your instructions for the test seperated by commas: "
     },
     {
         type: "input",

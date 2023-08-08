@@ -62,18 +62,29 @@ function renderThirdPartyAssets(assetNames, assetLinks){
 
   return finalizedSection
 }
-//TODO: Installation instructions
+
 function renderInstallation(installationInstructions){
+  let finalRender = '';
+  installationInstructions.split(',').forEach((instruction => {
+    finalRender += `- ${instruction}
+`;
+  }));
 
+  return finalRender;
 }
 
-//TODO: Test Instructions
-function renderTestInstructions(testInstructions){
+function renderTestInstructions(testDescription, testImageUrl, testImageAlt, testInstructions){
+  let finalRender = `${testDescription}
+![${testImageAlt}](${testImageUrl})  
+`;
+  console.log("test instruction init__");
+  testInstructions.split(',').forEach((instruction) => {
+    finalRender += `- ${instruction}
+`;
+  });
 
+  return finalRender;
 }
-
-//TODO: Contact Author page with github link and email address
-
 
 function generateMarkdown(data) {
   return(
@@ -92,11 +103,14 @@ ${data.description}
 
 ## Table Of Contents
 * [Description](#description)
+* [Installation](#installation)
 * [Usage](#usage)
-* [Credits](#credits)
+* [Testing](#testing)
+* [Questions](#questions)
+* [Credits](#credits)  
 ${renderLicenseLink(data.license)}
 
-## Installation Instructions
+## Installation
 ${renderInstallation(data.installation)}
 
 ## Usage
@@ -105,21 +119,20 @@ ${data.usageDescription}
 ### Usage Tutorial:  
 ![${data.usageGifAlt}](${data.usageGif})
 
+## Testing
+${renderTestInstructions(data.testDescription, data.testImageUrl, data.testImageAlt, data.testInstructions)}
+
 ## Credits  
 ${renderCollabs(data.collabs)}
 
 ${renderThirdPartyAssets(data.thirdPartyAssets, data.thirdPartyAssetsLinks)}
 
-## Test Instructions
-${renderTestInstructions(data.testInstructions)}
-
-## Contact The Author
+## Questions
 Check out my [Github](https://github.com/${data.githubUser})  
-You can email me at: [${data.email}](${data.email})
+You can email me at: [${data.email}](${data.email}) with any questions about the program.
 
 ${renderLicenseSection(data.license)}
-`
-  );
+`);
 }
 
 module.exports = generateMarkdown;

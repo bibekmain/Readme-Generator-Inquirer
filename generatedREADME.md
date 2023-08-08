@@ -1,40 +1,53 @@
 
-# ![Badge](https://img.shields.io/badge/License-Apache-brightgreen)
+# ![Badge](https://img.shields.io/badge/License-MIT-brightgreen)
 # 1
 
-![1](1)
+![7](6)
     
 ## Description
-1
+2
 
-- Motivation: 1
-- Purpose: 1
-- What i learned: 1
+- Motivation: 3
+- Purpose: 4
+- What i learned: 5
 
 ## Table Of Contents
 * [Description](#description)
+* [Installation](#installation)
 * [Usage](#usage)
-* [Credits](#credits)
+* [Testing](#testing)
+* [Questions](#questions)
+* [Credits](#credits)  
 * [License](#license)
 
+## Installation
+- 8
+
+
 ## Usage
-1  
+9  
 
 ### Usage Tutorial:  
-![1](1)
+![10](0)
+
+## Testing
+11
+![13](12)  
+- 14
+
 
 ## Credits  
 ### Collaborators:
-- one
--  two
--  three
+- 15
 
 
 ### Third Party Assets:
-* [google](https://google.com)
-* [ youtube]( https://youtube.com)
-* [ github]( https://github.com)
+* [16](17)
 
+
+## Questions
+Check out my [Github](https://github.com/18)  
+You can email me at: [19](19) with any questions about the program.
 
 ## License
-    This project is licensed with Apache
+    This project is licensed with MIT
