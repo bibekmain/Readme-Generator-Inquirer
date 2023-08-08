@@ -1,43 +1,43 @@
 
 # ![Badge](https://img.shields.io/badge/License-Apache-brightgreen)
-# Title
+# Title 
 
-![apple](./assets/apple.jpg)
+![Apple](./assets/apple.jpg)
     
 ## Description
-This is my project description
+My description of the project
 
-- Motivation: This was my motivation
+- Motivation: My motivation was this and that
 - Purpose: The project solves this problem
-- What i learned: I learned alot of things
+- What i learned: I learned this and that from this project
 
 ## Table Of Contents
 * [Description](#description)
 * [Installation](#installation)
 * [Usage](#usage)
 * [Testing](#testing)
-* [Questions](#questions)
 * [Credits](#credits)  
+* [Questions](#questions)
 * [License](#license)
 
 ## Installation
 - first do this
--  then do that
--  now it's installed!
+-  then do this
+-  now it's installed properly!
 
 
 ## Usage
-this is how you use the project.  
+This is the general description of how to use the app  
 
 ### Usage Tutorial:  
-![eated apple](./assets/usage.gif)
+![Eated apple](./assets/usage.gif)
 
 ## Testing
-this is the general description of how the shown test works  
-![apple](./assets/apple.jpg)  
-- first do this
+This is how I tested my project and it works!  
+![Apple](./assets/apple.jpg)  
+- first do this for the test
 -  then do this
--  at last do that and the test shows that it works
+-  now the test is complete and it works!
 
 
 ## Credits  
@@ -49,11 +49,12 @@ this is the general description of how the shown test works
 
 ### Third Party Assets:
 * [Google](https://google.com)
+* [ Github]( https://github.com)
 
 
 ## Questions
 Check out my [Github](https://github.com/BibekM)  
-You can email me at: [bibekmbkb@gmail.com](bibekmbkb@gmail.com) with any questions about the program.
+You can email me at: [bibekmbkb@gmail.clom](bibekmbkb@gmail.clom) with any questions about the program.
 
 ## License
     This project is licensed with Apache
