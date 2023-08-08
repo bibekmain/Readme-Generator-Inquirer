@@ -74,7 +74,7 @@ function renderInstallation(installationInstructions){
 }
 
 function renderTestInstructions(testDescription, testImageUrl, testImageAlt, testInstructions){
-  let finalRender = `${testDescription}
+  let finalRender = `${testDescription}  
 ![${testImageAlt}](${testImageUrl})  
 `;
   console.log("test instruction init__");
@@ -106,8 +106,8 @@ ${data.description}
 * [Installation](#installation)
 * [Usage](#usage)
 * [Testing](#testing)
-* [Questions](#questions)
 * [Credits](#credits)  
+* [Questions](#questions)
 ${renderLicenseLink(data.license)}
 
 ## Installation

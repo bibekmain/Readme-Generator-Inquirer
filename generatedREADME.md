@@ -1,15 +1,15 @@
 
-# ![Badge](https://img.shields.io/badge/License-MIT-brightgreen)
-# 1
+# ![Badge](https://img.shields.io/badge/License-Apache-brightgreen)
+# Title
 
-![7](6)
+![apple](./assets/apple.jpg)
     
 ## Description
-2
+This is my project description
 
-- Motivation: 3
-- Purpose: 4
-- What i learned: 5
+- Motivation: This was my motivation
+- Purpose: The project solves this problem
+- What i learned: I learned alot of things
 
 ## Table Of Contents
 * [Description](#description)
@@ -21,33 +21,39 @@
 * [License](#license)
 
 ## Installation
-- 8
+- first do this
+-  then do that
+-  now it's installed!
 
 
 ## Usage
-9  
+this is how you use the project.  
 
 ### Usage Tutorial:  
-![10](0)
+![eated apple](./assets/usage.gif)
 
 ## Testing
-11
-![13](12)  
-- 14
+this is the general description of how the shown test works  
+![apple](./assets/apple.jpg)  
+- first do this
+-  then do this
+-  at last do that and the test shows that it works
 
 
 ## Credits  
 ### Collaborators:
-- 15
+- this guy
+-  that girl
+-  this group of people
 
 
 ### Third Party Assets:
-* [16](17)
+* [Google](https://google.com)
 
 
 ## Questions
-Check out my [Github](https://github.com/18)  
-You can email me at: [19](19) with any questions about the program.
+Check out my [Github](https://github.com/BibekM)  
+You can email me at: [bibekmbkb@gmail.com](bibekmbkb@gmail.com) with any questions about the program.
 
 ## License
-    This project is licensed with MIT
+    This project is licensed with Apache
